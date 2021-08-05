@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+
+  <body>
+    <img id="logo" src="./images/logo.svg" alt="" />
+
+    <div class="container">
+      <div class="left">
+        <form action="">
+            <div class="input1">
+              <label for="">Bill</label>
+              <span>$</span>
+              <input type="text" name="" id="bill" placeholder="0"/>
+            </div>
+          
+          <div class="tip-amounts-container">
+            <label for="">Select Tip %</label>
+            <div class="tip-amounts">
+              <button class="tip-amount">5%</button>
+              <button class="tip-amount">10%</button>
+              <button class="tip-amount">15%</button>
+              <button class="tip-amount">25%</butt class="tip-amount"on>
+              <button class="tip-amount">50%</button>
+              <input type="text " placeholder="Custom" id="customValue"/>
+            </div>
+           
+          </div>
+          
+          <div class="input2">
+            <div class="labels">
+              <label for="">Number of People</label>
+              <label class="labelE">Can't be zero</label>
+            </div>
+            
+            <span><img src="./images/icon-person.svg" alt=""></span>
+            <input type="text" placeholder="0" id="numPeople" >
+          </div>
+        </form>
+      </div>
+
+      <div class="right">
+        <div class="conts">
+          <div class="cont1">
+            <span>Tip Amount</span>
+            <span id="tipAmount">$0.00</span>
+          </div>
+  
+          <div class="cont2">
+            <span>Total</span>
+            <span id="tipTotal">$0.00</span>
+          </div>
+        </div>
+
+        <button id="reset" class="disabled" disabled>reset</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
